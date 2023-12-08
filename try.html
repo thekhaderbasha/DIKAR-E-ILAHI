@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Count with Sound Example</title>
+  <style>
+    body {
+      text-align: center;
+      padding: 50px;
+      font-family: 'Arial', sans-serif;
+    }
+
+    #countDisplay {
+      font-size: 2em;
+      color: #333;
+    }
+
+    button {
+      font-size: 1em;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+<label for="userInput">Enter a count:</label>
+<input type="number" id="userInput" min="1" value="1">
+<button onclick="startCount()">Start</button>
+<div id="countDisplay">0</div>
+
+<audio id="sound" src="subhanallah.mp3"></audio>
+
+<script>
+  var count = 0;
+
+  function updateCountDisplay() {
+    document.getElementById('countDisplay').innerText = count;
+  }
+
+  function playSound() {
+    var audio = document.getElementById('sound');
+    audio.play();
+  }
+
+  function startCount() {
+    var userInput = parseInt(document.getElementById('userInput').value, 10);
+
+    if (!isNaN(userInput) && userInput > 0) {
+      count = 0;
+
+      var interval = setInterval(function() {
+        if (count < userInput) {
+          count++;
+          updateCountDisplay();
+          playSound();
+        } else {
+          clearInterval(interval);
+        }
+      }, 2000);
+    } else {
+      alert("Please enter a valid positive number.");
+    }
+  }
+</script>
+
+</body>
+</html>

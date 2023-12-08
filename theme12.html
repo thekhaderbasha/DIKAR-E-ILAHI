@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIKAR-E-ILAHI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unna&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: gray;
+
+
+       
+
+
+        }
+
+        nav{
+            background-color: rgb(1, 71, 71);
+            height: 4rem;
+        }
+        nav ul {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            line-height: 4rem;
+        }
+
+        ul li {
+            list-style: none;
+            text-transform: uppercase;
+            color: white;
+            
+        }
+
+        .nav_button{
+
+
+           
+
+        }
+
+        .nav_button:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        main{
+            
+           
+            display: flex;
+            flex-direction: column;
+            
+ 
+            justify-content: space-evenly;
+            text-align: center;
+            align-items: center;
+
+            
+
+        }
+
+        #box{
+
+            margin-top: 10rem;
+            /* background-color: aliceblue; */
+            height: 5rem;
+            width: auto;
+            text-transform: uppercase;
+            font-size: 3rem;
+            
+            
+            
+        }
+
+        #box2{
+
+
+            margin-top: 2rem;
+
+            /* background-color: aliceblue; */
+
+            height: 10rem;
+            width: 15rem;
+            
+            border-radius: 100%;
+
+            list-style: none;
+
+            /* font-size: 2rem; */
+
+            text-align: center;
+
+            align-items: center;
+        }
+
+
+        #counter{
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 3rem;
+            
+
+        }
+
+        h4{
+            font-size: 1.5rem;
+            margin-top: 3.5rem;
+            /* background-color: green;
+             */
+             color: green;
+        }
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 4rem;
+            
+        }
+
+        #box2 {
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    /* #box2:hover {
+      box-shadow: 0 0 20px rgba(0, 128, 255, 0.7);
+    } */
+
+    .time{
+        display: flex;
+       
+
+    }
+
+    #hour{
+        /* background-color: blue; */
+        margin-right: 0.5rem;
+        
+
+
+    }
+
+    #min{
+        /* background-color: rgb(62, 62, 62); */
+        margin-right: 0.5rem;
+    }
+
+    #sec{
+        /* background-color: rgb(248, 161, 161); */
+        margin-right: 0.5rem;
+    }
+
+        /* ---------------------------------------------------------------------------------------------------- */
+
+        @media only screen and (max-width:420px){
+
+            *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body{
+            /* background-color: gray; */
+            background-image: url(bg18.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+
+       
+
+
+        }
+
+        nav{
+            background-color: rgba(255, 255, 255, 0.084);
+            height: 4rem;
+
+            display: none;
+        }
+        nav ul {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            line-height: 4rem;
+        }
+
+        ul li {
+            list-style: none;
+            text-transform: uppercase;
+            color: white;
+            
+        }
+
+        .nav_button{
+
+
+           
+
+        }
+
+        .nav_button:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        main{
+            
+           
+            display: flex;
+            flex-direction: column;
+            
+ 
+            justify-content: space-evenly;
+            text-align: center;
+            align-items: center;
+
+            
+
+        }
+
+        #box{
+
+            margin-top: 8rem;
+            /* background-color: aliceblue; */
+            height: 5rem;
+            width: 14rem;
+            text-transform: capitalize;
+            font-size: 1.2rem;
+            color: rgb(255, 255, 255);
+            /* text-shadow: 1px 1px 6px ; */
+            /* transition: box-shadow 0.3s ease-in-out; */
+            font-family: 'Unna', serif;
+            
+            
+            
+        }
+
+        #box2{
+
+            /* background-image: url(button.jpg); */
+            background-size: cover;
+
+
+            margin-top: rem;
+
+            /* background-color: aliceblue; */
+
+            height: 10rem;
+            width: 10rem;
+            
+            border-radius: 100%;
+
+            list-style: none;
+
+            /* font-size: 2rem; */
+
+            text-align: center;
+
+            align-items: center;
+            /* border: solid 2px rgb(0, 255, 229); */
+            color: rgb(255, 255, 255);
+            /* text-shadow: 1px 1px 5px ; ; */
+
+
+
+            margin-top: 11.3rem;
+
+
+
+        }
+
+        #data{
+            margin-top: 8rem;
+        }
+
+        #counter{
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 9rem;
+            
+
+        }
+
+        h4{
+            font-size: 1.5rem;
+            margin-top: 3.5rem;
+            /* background-color: green;
+             */
+             color: green;
+        }
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 4rem;
+            
+        }
+
+        .press{
+            box-shadow: 5px 5px 5px blue;
+        }
+
+
+        .time{
+            /* background-color: rgb(2, 106, 95); */
+        display: flex;
+
+        margin-top: 2px;
+        margin-right: 2rem;
+        color: white;
+        padding: 3px 0;
+        border-radius: 5px;
+       
+
+    }
+
+
+
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li class="logo">Tasbhi</li>
+            <li class="nav_button"> start</li>
+            <li class="nav_button">reset</li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <div class="time">
+            <div id="hour">11</div> :&nbsp;
+            <div id="min">11</div> :&nbsp;
+            <div id="sec">11</div>
+            <div id="ampm">AM</div>
+        </div>
+
+        <div id="box">
+
+           <h3 id="data">bismillah</h3> 
+        </div>
+
+        <div id="box2" onclick="start() ; press()" >
+            
+
+           <h1 id="counter" >start</h1>
+        </div>
+
+        
+<audio src="subhanallah.mp3"  id="audioElement1" ></audio>
+<audio src="alhamdulillah.mp3"  id="audioElement2" ></audio>
+<audio src="allahuakbar.mp3"  id="audioElement3" ></audio>
+<audio src="full.mp3"  id="audio4" ></audio>
+
+
+       
+    </main>
+    <footer>
+
+    </footer>
+    
+    <script>
+
+        function updateClock(){
+
+var currentDate = new Date();
+
+var currentHour = currentDate.getHours();
+
+var currentMin= currentDate.getMinutes();
+
+var currentsec= currentDate.getSeconds();
+
+var amPm= (currentHour < 12) ? "AM" : "PM";
+
+
+document.getElementById("hour").innerText=(currentHour > 12) ? currentHour - 12 : currentHour;
+
+// minutes = (minutes < 10) ? "0" + minutes : minutes;
+        document.getElementById("min").innerText=(currentMin<10)?"0"+currentMin :currentMin;
+        document.getElementById("sec").innerText=(currentsec<10)?"0"+currentsec :currentsec;
+        document.getElementById("ampm").innerText=amPm;
+
+
+        setTimeout(updateClock,1000)
+
+
+
+        }
+
+        updateClock();
+
+        var tasbhi= document.getElementById("data");
+
+        var count=0;
+       
+
+        function start(){
+
+            count= count+1;
+            const maxClicks = 99;
+            
+
+            if(count<=33){
+                document.getElementById("counter").innerText=count;
+                document.getElementById("data").innerText=" subhanallah❤️سبحان الله" ;
+                var audio=  document.getElementById('audioElement1');
+                    audio.play();
+                    document.getElementById("box").classList.add('glowEffect');
+                    
+                    
+
+
+                 
+            }
+            else if(count<=66){
+                document.getElementById("counter").innerText=count;
+                document.getElementById("data").innerText="alhamdulillah❤️الحمد لله " ;
+                var audio=  document.getElementById('audioElement2');
+                    audio.play();
+
+            }
+            else if(count<=99){
+                document.getElementById("counter").innerText=count;
+                document.getElementById("data").innerText=" allahuakbar❤️الله أكبر" ;
+                var audio=  document.getElementById('audioElement3');
+                    audio.play();
+
+            }
+            else if(count==100){
+                count=100 && 0;
+                // document.getElementById("box2").innerText="mashallah";
+                document.getElementById("data").innerText="mashallah you complted one tasbhi";
+
+                document.getElementById("counter").innerHTML=" <h4>Start again</h4>";
+              
+
+
+            }
+
+    
+
+            
+
+
+            function press(){
+
+                document.getElementById("box2").style.boxShadow="2px 2px 10px white";
+
+
+
+
+            }
+
+     
+
+
+        }
+
+        
+
+
+
+    </script>
+</body>
+</html>

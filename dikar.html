@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width:420px){
+
+
+
+            *{
+                margin: 0%;
+                padding: 0%;
+                box-sizing: border-box;
+            }
+
+            body{
+                /* background-image: url(bg7.jpg); */
+                background-size: cover;
+                height: 100vh;
+                width: 100vw;
+                text-align: center;
+            }
+            .input{
+                display: flex;
+                /* justify-content: space-around; */
+                
+            }
+
+            #userInput{
+                width: 70%;;
+                height: 2rem;
+                /* background-color: rgb(116, 116, 116 */
+                border:solid red;
+                border-radius: 5px;
+                /* color: bisque; */
+                font-size:2rem;
+
+            }
+            button{
+                width: 30%;
+                height: 2rem;
+                background-color: black;
+                border-radius: 5px;
+                color: bisque;
+
+
+            }
+
+            .container{
+                display: flex;
+                /* justify-content:space-between; */
+                flex-wrap: wrap;
+                /* padding: 0rem 4rem; */
+
+            }
+
+            #box1{
+                height: 2rem;
+                /* width: 4rem; */
+                background-color: aqua;
+                margin: 2px 4px;
+                padding: 1rem 1.4rem;
+            }
+            #box2{
+                height: 2rem;
+                /* width: 4rem; */
+                background-color: aqua;
+                margin: 2px 4px;
+                padding: 1rem 1.4rem;
+            }
+            #box3{
+                height: 2rem;
+                /* width: 8rem; */
+                background-color: aqua;
+                margin: 2px 4px;
+                padding: 1rem 1.4rem;
+            }
+            #box4{
+                height: 2rem;
+                /* width: 4rem; */
+                background-color: aqua;
+                margin: 2px 4px;
+                padding: 1rem 1.4rem;
+            }
+            #box5{
+                height: 2rem;
+                /* width: 4rem; */
+                background-color: aqua;
+                margin: 2px 4px;
+            }
+            #box6{
+                height: 2rem;
+                /* width: 4rem; */
+                background-color: aqua;
+                margin: 2px 4px;
+            }
+            #box7{
+                height: 2rem;
+                /* width: 4rem; */
+                background-color: aqua;
+                margin: 2px 4px;
+            }
+            #box8{
+                height: 2rem;
+                /* width: 4rem; */
+                background-color: aqua;
+                margin: 2px 4px;
+            }
+            #box9{
+                height: 2rem;
+                /* width: 4rem; */
+                background-color: aqua;
+                margin: 2px 4px;
+            }
+            #box10{
+                height: 2rem;
+                /* width: 4rem; */
+                background-color: aqua;
+                margin: 2px 4px;
+            }
+
+            .count_box{
+                background-color: blueviolet;
+                height: 2rem;
+                width: 4rem;
+            }
+
+            .text{
+                background-color: rgb(43, 156, 226);
+                height: 2rem;
+                width: 4rem;
+
+            }
+
+            .counter{
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .main{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+
+            #player{
+                height: 10rem;
+                width: 18rem;
+                background-color: yellow;
+            }
+
+            #btn{
+                height: 4rem;
+                width: 6rem;
+                background-color: rgb(17, 255, 0);
+            }
+
+
+
+        }
+    </style>
+    
+</head>
+<body>
+
+
+    
+
+
+    
+        <h2>dikar-e-ilahi</h2>
+
+        <div class="input">
+           
+            <input type="text" id="userInput">
+            <button onclick="getValue()"  >submit</button>
+           
+          
+        </div>
+
+        <div class="container">
+            <div id="box1" onclick="getText()">SubhaanAllaah</div>
+            <div id="box2">alhamdulillah</div>
+            <div id="box2">laa ilaha illaha </div>
+            <div id="box4">allahu akbar</div>
+            <div id="box5">lahuwala wala quvata</div>
+            <div id="box6">la ilaha illa antha suhanka</div>
+            <div id="box7">astakfirullah</div>
+            
+            <div id="box8">rabbigfirli</div>
+            <div id="box9">raditubillahi</div>
+            <div id="box10">ya hayyum ya qiuyyum</div>
+
+        </div>
+    <div class="counter">
+        
+        <div class="count_box" id="count_box">count</div>
+        <div class="text"  id="text">text</div>
+    </div>
+
+    <div class="main">
+
+        <div id="player">
+
+        </div>
+        <div id="btn" onclick="start()">
+
+        </div>
+
+    </div>
+
+
+<script>
+      var count=0;
+
+let userInput = document.getElementById('userInput').value;
+
+
+function getValue() {
+// Get the value from the input box
+var userInput = document.getElementById('userInput').value;
+
+// Display the value (you can do whatever you want with it)
+counter= document.getElementById("count_box").innerText=userInput;
+}
+
+function getText() {
+// Get the value from the input box
+var userInput = document.getElementById("box1").innerText;
+console.log(userInput)
+
+// Display the value (you can do whatever you want with it)
+document.getElementById("text").innerText=userInput;
+document.getElementById("player").innerText=userInput;
+}
+function getText1() {
+// Get the value from the input box
+var userInput = document.getElementById("text1").innerText;
+console.log(userInput)
+
+// Display the value (you can do whatever you want with it)
+document.getElementById("box2").innerText=userInput;
+}
+
+function start(){
+
+let userInput = document.getElementById('text').value;
+let number= document.getElementById('count_box').getValue;
+    
+console.log(number);
+// console.log(userInput);
+
+    
+
+    if(count<userInput){
+        document.getElementById("box2").innerText=count;
+        
+       
+            
+            
+
+
+         
+    }
+
+    else if(count==userInput){
+        document.getElementById("box2").innerText="complted ra punda";
+
+    }
+
+    
+  
+}
+
+var count = 0;
+
+  function updateCountDisplay() {
+    document.getElementById('countDisplay').innerText = count;
+  }
+
+  function playSound() {
+    var audio = document.getElementById('sound');
+    audio.play();
+  }
+
+  function startCount() {
+    var userInput = parseInt(document.getElementById('userInput').value, 10);
+
+    if (!isNaN(userInput) && userInput > 0) {
+      count = 0;
+
+      var interval = setInterval(function() {
+        if (count < userInput) {
+          count++;
+          updateCountDisplay();
+          playSound();
+        } else {
+          clearInterval(interval);
+        }
+      }, 1000);
+    } else {
+      alert("Please enter a valid positive number.");
+    }
+  }
+
+
+
+</script>
+    
+</body>
+</html>

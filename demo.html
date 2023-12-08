@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #box2{
+            height: 10rem;
+            width: 15rem;
+            background-color: bisque;
+        }
+
+        #box{
+            height: 10rem;
+            width: 15rem;
+            background-color: aqua;
+        }
+        /* ----------------------------------------------------------------------------- */
+    </style>
+</head>
+<body>
+
+    <input type="text"  id="tp">
+
+    <div id="box">
+        number
+    </div>
+
+    <div id="box2">
+
+    </div>
+    <button id="start" onclick="start()">start</button>
+    
+<label for="userInput">Enter something:</label>
+<input type="text" id="userInput">
+<button onclick="getValue()">Submit</button>
+    
+
+
+<!-- ------------------------------------------------------------------------------------------- -->
+    <script>
+
+        // var count= prompt("ENTER NUMBER");
+
+        var count=0;
+
+        let userInput = document.getElementById('userInput').value;
+
+
+        function getValue() {
+    // Get the value from the input box
+    var userInput = document.getElementById('userInput').value;
+
+    // Display the value (you can do whatever you want with it)
+      counter= document.getElementById("box").innerText=userInput;
+  }
+
+  function start(){
+
+    let userInput = document.getElementById('userInput').value;
+    count= count+10;
+            const maxClicks = userInput;
+            
+
+            if(count<userInput){
+                document.getElementById("box2").innerText=count;
+                
+               
+                    
+                    
+
+
+                 
+            }
+
+            else if(count==userInput){
+                document.getElementById("box2").innerText="complted ra punda";
+
+            }
+          
+    }
+
+
+
+   
+
+
+    </script>
+</body>
+</html>

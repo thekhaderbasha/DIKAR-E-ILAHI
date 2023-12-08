@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIKAR-E-ILAHI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unna&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: gray;
+
+
+       
+
+
+        }
+
+        nav{
+            background-color: rgb(1, 71, 71);
+            height: 4rem;
+        }
+        nav ul {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            line-height: 4rem;
+        }
+
+        ul li {
+            list-style: none;
+            text-transform: uppercase;
+            color: white;
+            
+        }
+
+        .nav_button{
+
+
+           
+
+        }
+
+        .nav_button:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        main{
+            
+           
+            display: flex;
+            flex-direction: column;
+            
+ 
+            justify-content: space-evenly;
+            text-align: center;
+            align-items: center;
+
+            
+
+        }
+
+        #box{
+
+            margin-top: 10rem;
+            /* background-color: aliceblue; */
+            height: 5rem;
+            width: auto;
+            text-transform: uppercase;
+            font-size: 3rem;
+            
+            
+            
+        }
+
+        #box2{
+
+
+            margin-top: 2rem;
+
+            /* background-color: aliceblue; */
+
+            height: 10rem;
+            width: 15rem;
+            
+            border-radius: 100%;
+
+            list-style: none;
+
+            /* font-size: 2rem; */
+
+            text-align: center;
+
+            align-items: center;
+        }
+
+
+        #counter{
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 3rem;
+            
+
+        }
+
+        h4{
+            font-size: 1.5rem;
+            margin-top: 3.5rem;
+            /* background-color: green;
+             */
+             color: green;
+        }
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 4rem;
+            
+        }
+
+        #box2 {
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    #box2:hover {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    }
+
+    #box3:hover {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    }
+    #box4:hover {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    }
+    #box5:hover {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    }
+
+    .time{
+        display: flex;
+       
+
+    }
+
+    #hour{
+        /* background-color: blue; */
+        margin-right: 0.5rem;
+        
+
+
+    }
+
+    #min{
+        /* background-color: rgb(62, 62, 62); */
+        margin-right: 0.5rem;
+    }
+
+    #sec{
+        /* background-color: rgb(248, 161, 161); */
+        margin-right: 0.5rem;
+    }
+
+        /* ---------------------------------------------------------------------------------------------------- */
+
+        @media only screen and (max-width:420px){
+
+            *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            /* background-color: gray; */
+            background-image: url(bg12.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+       
+
+
+        }
+
+        nav{
+            background-color: rgba(255, 255, 255, 0.084);
+            height: 4rem;
+
+            display: none;
+        }
+        nav ul {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            line-height: 4rem;
+        }
+
+        ul li {
+            list-style: none;
+            text-transform: uppercase;
+            color: white;
+            
+        }
+
+        .nav_button{
+
+
+           
+
+        }
+
+        .nav_button:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        main{
+            
+           
+            display: flex;
+            flex-direction: column;
+            
+ 
+            justify-content: space-;
+            text-align: center;
+            align-items: center;
+
+            
+
+        }
+
+        #box{
+
+            margin-top: -0.1px;
+            margin-bottom: 6rem;
+            /* background-color: aliceblue; */
+            /* height: 5rem;
+            width: 14rem; */
+            text-transform: capitalize;
+            font-size: 3rem;
+            color:  rgb(252, 151, 20);            text-shadow: 1px 1px 6px ;
+            /* transition: box-shadow 0.3s ease-in-out; */
+            font-family: 'Unna', serif;
+            
+            
+            
+        }
+
+        #box2{
+
+            background-image: url(button9.jpg);
+            background-size: cover;
+
+
+            margin-top: 12rem;
+         
+            /* margin-left: 0.55rem; */
+
+            /* background-color: rgb(253, 254, 255); */
+
+            height: 12rem;
+            width: 12rem;
+            
+            border-radius: 100%;
+
+            list-style: none;
+
+            /* font-size: 2rem; */
+
+            text-align: center;
+
+            align-items: center;
+            border: solid 2px rgb(252, 151, 20);
+            color:  rgb(252, 151, 20);            text-shadow: 1px 1px 5px ; ;
+
+
+
+            /* margin-top: 11.3rem; */
+
+
+
+        }
+
+        
+        #box3{
+
+/* background-image: url(button2o.png); */
+
+background-image: url(button9.jpg);
+background-size: cover;
+
+
+margin-top: -2rem;
+/* margin-left: 0.55rem; */
+
+/* background-color: rgb(253, 254, 255); */
+
+height: 6rem;
+width: 6rem;
+
+border-radius: 100%;
+
+list-style: none;
+
+/* font-size: 2rem; */
+
+text-align: center;
+
+align-items: center;
+border: solid 2px  rgb(252, 151, 20);;
+color:  rgb(252, 151, 20);text-shadow: 1px 1px 5px ; ;
+
+
+
+/* margin-top: 1rem; */
+
+
+
+}
+
+  
+#box4{
+
+/* background-image: url(button2o.png); */
+
+background-image: url(button9.jpg);
+background-size: cover;
+
+
+margin-top: -6rem;
+margin-left: 18rem;
+
+/* background-color: rgb(253, 254, 255); */
+
+height: 3rem;
+width: 3rem;
+
+border-radius: 100%;
+
+list-style: none;
+
+/* font-size: 2rem; */
+
+text-align: center;
+
+align-items: center;
+border: solid 2px rgb(252, 151, 20);
+color:  rgb(252, 151, 20);
+text-shadow: 1px 1px 5px ; ;
+
+
+
+/* margin-top: 1rem; */
+
+
+
+}
+  
+#box5{
+
+/* background-image: url(button2o.png); */
+
+background-image: url(button9.jpg);
+background-size: cover;
+
+
+margin-top: -3rem;
+margin-right: 18rem;
+
+/* background-color: rgb(253, 254, 255); */
+
+height: 3rem;
+width: 3rem;
+
+border-radius: 100%;
+
+list-style: none;
+
+/* font-size: 2rem; */
+
+text-align: center;
+
+align-items: center;
+border: solid 2px rgb(252, 151, 20);
+color:  rgb(252, 151, 20);
+text-shadow: 1px 1px 5px ; ;
+
+
+
+/* margin-top: 1rem; */
+
+
+}
+
+        #data{
+            margin-top: 8rem;
+        }
+
+        #counter{
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 6rem;
+            margin-top: 3rem;
+            
+
+        }
+
+        #counter_sub{
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 4rem;
+            margin-top: -0.7rem;
+            
+
+        }
+
+        #counter_sub3
+        {
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: 0.4rem;
+        }
+
+        #counter_sub2
+        {
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+            margin-right: 0.2rem;
+        }
+
+        h4{
+            font-size: 1.5rem;
+            margin-top: 3.5rem;
+            /* background-color: green;
+             */
+             color: green;
+        }
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 4rem;
+            
+        }
+
+        .press{
+            box-shadow: 5px 5px 5px blue;
+        }
+
+
+        .time{
+            /* background-color: rgb(1, 151, 162); */
+        display: flex;
+        text-align: center;
+
+        /* margin-left: 5rem;
+         */
+         margin-top: 7rem;
+        color:  rgb(255, 255, 255);
+        padding: 3px 0;
+        border-radius: 5px;
+        height: 2rem;
+        width: 16rem;
+        /* border-bottom: 1px solid blue; */
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+
+       
+
+    }
+
+    #hour{
+        /* background-color: blue; */
+        margin-left: 5rem;
+        /* font-size: 3rem; */
+        
+
+
+    }
+
+    #min{
+        /* background-color: rgb(62, 62, 62); */
+        margin-right: 0.5rem;
+        /* font-size: 2rem; */
+    }
+
+    #sec{
+        /* background-color: rgb(248, 161, 161); */
+        margin-right: 0.5rem;
+        /* font-size: 3rem; */
+    }
+
+    a{
+
+        color:  rgb(252, 151, 20);
+
+    }
+
+
+
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li class="logo">Tasbhi</li>
+            <li class="nav_button"> start</li>
+            <li class="nav_button">reset</li>
+        </ul>
+
+    </nav>
+
+    
+
+        
+
+        <main>
+            <div id="box">
+
+                <h3 id="data">bismillah</h3> 
+             </div>
+
+        <div id="box2" onclick="increaseCount()" >
+            
+
+           <h1 id="counter" >^</h1>
+        </div>
+        
+        <div id="box3" onclick="decreaseCount()" >
+            
+
+            <h1 id="counter_sub" >&#8964;</h1>
+         </div>
+         <div id="box4" onclick="reset()" >
+            
+
+            <h1 id="counter_sub2" >&#10226;</h1>
+         </div>
+         <div id="box5" onclick="back()" >
+            
+
+           <a href="counter_entrence.html"> <h1 id="counter_sub3" >&#8678;  </h1></a>
+         </div>
+
+         <div class="time">
+            <div id="hour">11</div> :&nbsp;
+            <div id="min">11</div> :&nbsp;
+            <div id="sec">11</div>
+            <div id="ampm">AM</div>
+        </div>
+       
+       
+
+
+        
+<audio src="subhanallah.mp3"  id="audioElement1" ></audio>
+<audio src="alhamdulillah.mp3"  id="audioElement2" ></audio>
+<audio src="allahuakbar.mp3"  id="audioElement3" ></audio>
+<audio src="full.mp3"  id="audio4" ></audio>
+<audio src="click2.wav"  id="audioElementclick" ></audio>
+<audio src="complete.mp3"  id="audioElementcomplete" ></audio>
+
+
+
+       
+    </main>
+    <footer>
+
+    </footer>
+    
+    <script>
+
+        function updateClock(){
+
+var currentDate = new Date();
+
+var currentHour = currentDate.getHours();
+
+var currentMin= currentDate.getMinutes();
+
+var currentsec= currentDate.getSeconds();
+
+var amPm= (currentHour < 12) ? "AM" : "PM";
+
+
+document.getElementById("hour").innerText=(currentHour > 12) ? currentHour - 12 : currentHour;
+
+// minutes = (minutes < 10) ? "0" + minutes : minutes;
+        document.getElementById("min").innerText=(currentMin<10)?"0"+currentMin :currentMin;
+        document.getElementById("sec").innerText=(currentsec<10)?"0"+currentsec :currentsec;
+        document.getElementById("ampm").innerText=amPm;
+
+
+        setTimeout(updateClock,1000)
+
+
+
+        }
+
+        updateClock();
+
+//         var tasbhi= document.getElementById("data");
+
+//         var count=0;
+
+//         function updateCount(){
+//             document.getElementById("data").innerText=count ;
+
+//         }
+       
+
+//         function start(){
+
+//             count= count+1;
+            
+            
+
+//             if(count<=1000){
+//                 // document.getElementById("counter").innerText=count;
+//                 document.getElementById("data").innerText=count ;
+//                 // var audio=  document.getElementById('audioElement1');
+//                 //     audio.play();
+//                 //     document.getElementById("box").classList.add('glowEffect');
+                    
+                    
+//                 updateCount();
+
+
+                 
+//             }
+
+          
+//             // else if(count==100){
+//             //     count=100 && 0;
+//             //     // document.getElementById("box2").innerText="mashallah";
+//             //     document.getElementById("data").innerText="mashallah you complted 100";
+
+//             //     document.getElementById("counter").innerHTML=" <h4>Start again</h4>";
+              
+
+
+//             // }
+
+          
+//             function  start_minus(){
+
+//               count --;
+//               updateCount();
+
+//                 // var target= document.getElementById("data").innerHTML;
+
+//                 document.getElementById("data").innerText=count ;
+
+
+
+
+
+// }
+
+
+    
+
+            
+
+
+//             function press(){
+
+//                 document.getElementById("box2").style.boxShadow="2px 2px 10px white";
+
+
+
+
+//             }
+
+     
+
+
+//         }
+
+
+var count = 0;
+
+function updateCounterDisplay() {
+  document.getElementById('data').innerText = count;
+}
+
+function increaseCount() {
+  count++;
+  updateCounterDisplay();
+  var audio=  document.getElementById('audioElementclick');
+                    audio.play();
+
+                   
+                    if (count ==100) {
+                        document.getElementById('data').innerText = "100 completd";
+                        var audio=  document.getElementById('audioElementcomplete');
+                    audio.play();
+   
+    
+  }
+
+  else if(count ==200) {
+                        document.getElementById('data').innerText = "200 completd";
+                        var audio=  document.getElementById('audioElementcomplete');
+                    audio.play();
+   
+    
+  }
+
+  else if(count ==300) {
+                        document.getElementById('data').innerText = "300 completd";
+                        var audio=  document.getElementById('audioElementcomplete');
+                    audio.play();
+   
+    
+  }
+
+  else if(count ==400) {
+                        document.getElementById('data').innerText = "400 completd";
+                        var audio=  document.getElementById('audioElementcomplete');
+                    audio.play();
+   
+    
+  }
+
+  else if(count ==500) {
+                        document.getElementById('data').innerText = "500 completd";
+                        var audio=  document.getElementById('audioElementcomplete');
+                    audio.play();
+   
+    
+  }
+  else if(count ==600) {
+                        document.getElementById('data').innerText = "600 completd";
+                        var audio=  document.getElementById('audioElementcomplete');
+                    audio.play();
+   
+    
+  }
+  else if(count ==700) {
+                        document.getElementById('data').innerText = "700 completd";
+                        var audio=  document.getElementById('audioElementcomplete');
+                    audio.play();
+   
+    
+  }
+  else if(count ==800) {
+                        document.getElementById('data').innerText = "800 completd";
+                        var audio=  document.getElementById('audioElementcomplete');
+                    audio.play();
+   
+    
+  }
+  else if(count ==900) {
+                        document.getElementById('data').innerText = "900 completd";
+                        var audio=  document.getElementById('audioElementcomplete');
+                    audio.play();
+   
+    
+  }
+  else if(count ==1000) {
+                        document.getElementById('data').innerText = "1000 completd";
+                        var audio=  document.getElementById('audioElementcomplete');
+                    audio.play();
+   
+    
+  }
+
+
+}
+
+function decreaseCount() {
+  if (count > 0) {
+    count--;
+    updateCounterDisplay();
+  }
+}
+    
+function reset() {
+  count=0;
+  updateCounterDisplay();
+}
+
+
+
+    </script>
+</body>
+</html>
