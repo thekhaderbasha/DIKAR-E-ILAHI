@@ -172,20 +172,20 @@
 
         /* ---------------------------------------------------------------------------------------------------- */
 
-        @media only screen and (max-width:420px){
+        @media only screen and (max-width:480px){
 
             *{
             margin: 0%;
             padding: 0%;
             box-sizing: border-box;
         }
-
         body{
+            background-color: rgb(0, 0, 0);
+           
             height: 100vh;
-            /* background-color: gray; */
-            background-image: url(bg3.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
 
        
 
@@ -225,13 +225,26 @@
         }
 
         main{
+
+            border:2px solid white;
+            box-shadow: 1px 1px 20px white;
+            align-self: center;
+
+            background-image: url(bg3.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            height: 85%;
+            width: 96%;
+
+            border-radius: 20px;
             
            
             display: flex;
             flex-direction: column;
             
  
-            justify-content: space-;
+            justify-content: space-between;
             text-align: center;
             align-items: center;
 
@@ -331,6 +344,10 @@ text-shadow: 1px 1px 5px ; ;
 
 }
 
+.boxes{
+    display: flex;
+}
+
   
 #box4{
 
@@ -340,8 +357,7 @@ background-image: url(button4.jpg);
 background-size: cover;
 
 
-margin-top: -6rem;
-margin-left: 18rem;
+
 
 /* background-color: rgb(253, 254, 255); */
 
@@ -377,8 +393,8 @@ background-image: url(button4.jpg);
 background-size: cover;
 
 
-margin-top: -3rem;
-margin-right: 18rem;
+/* margin-top: 2rem;
+margin-right: 18rem; */
 
 /* background-color: rgb(253, 254, 255); */
 
@@ -399,8 +415,6 @@ color: rgb(255, 255, 255);
 text-shadow: 1px 1px 5px ; ;
 
 
-
-/* margin-top: 1rem; */
 
 
 }
@@ -469,17 +483,19 @@ text-shadow: 1px 1px 5px ; ;
 
 
         .time{
+            text-align: center;
             background-color: rgb(1, 151, 162);
         display: flex;
         text-align: center;
+        /* margin-top: ; */
 
-        margin-left: 5rem;
+        margin-left: 5%;
         color: white;
-        padding: 3px 0;
+        padding: 3px 4rem;
         border-radius: 5px;
-        height: 2rem;
-        width: 16rem;
-        border-bottom: 1px solid blue;
+        /* height: 2rem;
+        width: 16rem; */
+        /* border-bottom: 1px solid blue; */
         border-bottom-right-radius: 100px;
         border-bottom-left-radius: 100px;
 
@@ -489,7 +505,7 @@ text-shadow: 1px 1px 5px ; ;
 
     #hour{
         /* background-color: blue; */
-        margin-left: 5rem;
+        /* margin-left: 5rem; */
         /* font-size: 3rem; */
         
 
@@ -524,17 +540,10 @@ text-shadow: 1px 1px 5px ; ;
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li class="logo">Tasbhi</li>
-            <li class="nav_button"> start</li>
-            <li class="nav_button">reset</li>
-        </ul>
-
-    </nav>
-
+    
     
 
+    <main>
         <div class="time">
             <div id="hour">11</div> :&nbsp;
             <div id="min">11</div> :&nbsp;
@@ -542,7 +551,7 @@ text-shadow: 1px 1px 5px ; ;
             <div id="ampm">AM</div>
         </div>
 
-        <main>
+       
             <div id="box">
 
                 <h3 id="data">bismillah</h3> 
@@ -554,23 +563,32 @@ text-shadow: 1px 1px 5px ; ;
            <h1 id="counter" >^</h1>
         </div>
         
-        <div id="box3" onclick="decreaseCount()" >
-            
+        <div class="boxes">
+            <div id="box5" onclick="back()" >
+               
+   
+                <a href="counter_entrence.html"> <h1 id="counter_sub3" >&#8678;  </h1></a>
+             </div>
+        
+           
+            <div id="box3" onclick="decreaseCount()" >
+               
+   
+               <h1 id="counter_sub" >&#8964;</h1>
+            </div>
 
-            <h1 id="counter_sub" >&#8964;</h1>
-         </div>
-         <div id="box4" onclick="reset()" >
-            
-
-            <h1 id="counter_sub2" >&#10226;</h1>
-         </div>
-         <div id="box5" onclick="back()" >
-            
-
-            <a href="counter_entrence.html"> <h1 id="counter_sub3" >&#8678;  </h1></a>
-         </div>
+            <div id="box4" onclick="reset()" >
+               
+   
+                <h1 id="counter_sub2" >&#10226;</h1>
+             </div>
+           
+   
+            </div>
        
-       
+        </main>
+
+    
 
 
         

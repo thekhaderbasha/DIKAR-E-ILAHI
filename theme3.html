@@ -17,6 +17,10 @@
         body{
             background-color: gray;
 
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+
 
        
 
@@ -162,7 +166,7 @@
 
         /* ---------------------------------------------------------------------------------------------------- */
 
-        @media only screen and (max-width:420px){
+        @media only screen and (max-width:480px){
 
             *{
             margin: 0%;
@@ -171,10 +175,11 @@
         }
 
         body{
-            /* background-color: gray; */
-            background-image: url(bg3.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            height: 100vh;            
 
        
 
@@ -214,15 +219,29 @@
         }
 
         main{
+
+            border-radius: 20px;
+            border-top:2px solid white;
+            border-bottom: none;
+            box-shadow: 1px 1px 20px white;
+            align-self: center;
+
+            background-image: url(bg3.jpg);
+            background-size: contain;
+            background-repeat: repeat;
+
+            height: 85%;
+            width: 96%;
             
            
             display: flex;
             flex-direction: column;
             
  
-            justify-content: space-evenly;
+            /* justify-content: space-between; */
             text-align: center;
             align-items: center;
+
 
             
 
@@ -230,13 +249,13 @@
 
         #box{
 
-            margin-top: 10rem;
+            margin-top: -1rem;
             /* background-color: aliceblue; */
             height: 5rem;
             width: 14rem;
             text-transform: capitalize;
             font-size: 1.2rem;
-            color:  rgb(0, 155, 129);
+            color: rgb(255, 255, 255);
             text-shadow: 1px 1px 6px ;
             /* transition: box-shadow 0.3s ease-in-out; */
             font-family: 'Unna', serif;
@@ -248,10 +267,10 @@
         #box2{
 
             background-image: url(button4.jpg);
-            background-size:cover;
+            background-size: cover;
 
 
-            margin-top: 2rem;
+            margin-top: rem;
 
             background-color: aliceblue;
 
@@ -267,20 +286,20 @@
             text-align: center;
 
             align-items: center;
-            border: solid 2px rgb(0, 155, 129);
+            border: solid 2px rgb(99, 99, 99);
             color: rgb(255, 255, 255);
             text-shadow: 1px 1px 5px ; 
 
 
 
-            margin-top: 11.3rem;
+            margin-top: 1rem;
 
 
 
         }
 
         #data{
-            margin-top: rem;
+            margin-top: 1rem;
         }
 
         #counter{
@@ -315,10 +334,10 @@
 
         .time{
             /* background-color: rgb(76, 11, 255); */
-            background-image: url(button4.jpg);
         display: flex;
 
-        margin-top: 1px;
+        margin-top: -8rem;
+        margin-bottom: ;
         color: white;
         /* padding: 3px 0; */
         border-radius: 5px;
@@ -352,27 +371,15 @@
 
     .back{
 
-        margin-top: -38rem;
-        margin-left: 19rem;
+        margin-top: 1.5rem;
         font-size: 1.5rem;
-        /* color: aquamarine; */
-        /* background-color: aliceblue; */
-
-
-        /* background-image: url(button3.jpg); */
         
-    }
-
-    a{
-        color: white;
     }
 
     .back:hover{
         opacity: 0.5;
 
     }
-
-   
 
 
         }
@@ -384,14 +391,7 @@
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li class="logo">Tasbhi</li>
-            <li class="nav_button"> start</li>
-            <li class="nav_button">reset</li>
-        </ul>
-
-    </nav>
+    
 
     <main>
 
@@ -413,7 +413,6 @@
            <h1 id="counter" >start</h1>
         </div>
 
-        <div class="back"> <a href="">⬅️</a> </a></div>
 
         
 <audio src="subhanallah.mp3"  id="audioElement1" ></audio>
@@ -424,11 +423,7 @@
 
        
     </main>
-    <footer>
-
-       
-
-    </footer>
+   
     
     <script>
 
@@ -489,8 +484,6 @@ document.getElementById("hour").innerText=(currentHour > 12) ? currentHour - 12 
                 document.getElementById("data").innerText="alhamdulillah❤️الحمد لله " ;
                 var audio=  document.getElementById('audioElement2');
                     audio.play();
-
-                    
 
             }
             else if(count<=99){
