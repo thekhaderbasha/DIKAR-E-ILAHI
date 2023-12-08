@@ -230,8 +230,9 @@
             background-size: contain;
             background-repeat: repeat;
 
-            height: 85%;
-            width: 96%;
+            height: 700px;
+            width: 400px;
+            
             
            
             display: flex;
@@ -336,7 +337,7 @@
             background-color: rgb(0, 0, 0);
         display: flex;
 
-        margin-top: -8rem;
+        margin-top: -5rem;
         margin-bottom: ;
         color: white;
         /* padding: 3px 0; */
@@ -469,7 +470,7 @@ document.getElementById("hour").innerText=(currentHour > 12) ? currentHour - 12 
 
             if(count<=33){
                 document.getElementById("counter").innerText=count;
-                document.getElementById("data").innerText=" subhanallah❤️سبحان الله" ;
+                document.getElementById("data").innerText= "سبحان الله"+"\n "+" subhanallah"  ;
                 var audio=  document.getElementById('audioElement1');
                     audio.play();
                     document.getElementById("box").classList.add('glowEffect');
@@ -481,14 +482,14 @@ document.getElementById("hour").innerText=(currentHour > 12) ? currentHour - 12 
             }
             else if(count<=66){
                 document.getElementById("counter").innerText=count;
-                document.getElementById("data").innerText="alhamdulillah❤️الحمد لله " ;
+                document.getElementById("data").innerText="الحمد لله "+"\n "+"alhamdulillah" ;
                 var audio=  document.getElementById('audioElement2');
                     audio.play();
 
             }
             else if(count<=99){
                 document.getElementById("counter").innerText=count;
-                document.getElementById("data").innerText=" allahuakbar❤️الله أكبر" ;
+                document.getElementById("data").innerText="الله أكبر"+" \n "+" allahuakbar" ;
                 var audio=  document.getElementById('audioElement3');
                     audio.play();
 
